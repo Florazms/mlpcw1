@@ -48,8 +48,8 @@ elif args.block_type == 'empty_block':
     processing_block_type = EmptyBlock
     dim_reduction_block_type = EmptyBlock
 elif args.block_type == 'normalizationBlock': 
-    processing_block_type = ConvolutionalProcessingBlockSpecial
-    dim_reduction_block_type = ConvolutionalDimensionalityReductionBlockSpecial
+    processing_block_type = pytorch_mlp_framework.model_architectures.ConvolutionalProcessingBlockSpecial
+    dim_reduction_block_type = pytorch_mlp_framework.model_architectures.ConvolutionalDimensionalityReductionBlockSpecial
 else:
     raise ModuleNotFoundError
 
